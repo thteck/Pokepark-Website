@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This head section contains all the invisible information about the page -->
+<head>
+  <title>Nintendo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="stylesheet2.css"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans&family=Slabo+27px&family=Staatliches&family=Teko:wght@500&display=swap&family=Fraunces:wght@600&display=swap" rel="stylesheet">
+</head>
+    
+    
+<!--Header -->   
+<body>
+
+    <div id="logo">
+        <img src="logo.png" alt="logo" style="width:300px;height:58px;margin: 0px">
+    </div>
+
+<!-- The navigation menu -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">Attraction<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="waterpark.html">Water Park</a>
+                <a href="skypark.html">Sky Park</a>
+                <a href="aquarium.html">Aquarium</a>
+            </div>
+        </div>
+
+        <div class="subnav">
+        <button class="subnavbtn">Packages<i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="studentpackage.html">Student Package</a>
+            <a href="grouppackage.html">Group Package</a>
+            <a href="birthdaypackage.html">Birthday Package</a>
+            
+        </div>
+      </div>
+        
+      <div class="subnav">
+        <button class="subnavbtn">Services<i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="merchandise.html">Merchandise Shop</a>
+            <a href="tickets.html">Ticket Purchasing</a>
+            
+        </div>
+      </div>
+
+        <a href="contact.html">Contact</a>
+        <div class="topnav">
+            <input type="text" placeholder="Search.." style="position: relative; right: -300px;top: 10px; height: 40px">
+        </div>
+    </div>
+    
+        <div class="clear"></div>
+        
+<!--top image-->
+       
+       <br><br> 
+   <div class="w3-content w3-section" style="margin-top: -40px">
+      <img class="mySlides" src="waterpark/slideshow1.jpg" alt="slide1" style="width:100%;height:100%">
+      <img class="mySlides" src="waterpark/slideshow2.jpg" alt="slide2" style="width:100%;height:70%" >
+      <img class="mySlides" src="waterpark/slideshow3.jpg" alt="slide3" style="width:100%;height:100%">
+  </div>
+      
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>       
+
+              
+       
+<h1>About Water Park</h1>
+<h3>Having been expanded in 2017, Poke Water park is now bigger and better. Boasting thrilling high-speed water rides to kid-friendly ones, it promises the perfect adventure for guests of all ages. In addition to its original nine slides and rides, guests can enjoy seven latest attractions including the Royal Flush, Asia’s first hybrid ride, and the Kraken Racers, Singapore’s first four-lane mat racer slide. If that is a level too mild, dare yourself to go on the Free Fall for a mind-blowing experience. There are also rides for little ones over at the Kidz Zone, ensuring that at its heart, Wild Wild Wet remains a family experience.</h3>      
+       
+       <hr>
+       
+        
+<!-- List of attractions here -->
+       
+<h2>Attractions</h2>
+
+       
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="waterpark/attraction1.jpg" alt="park1" style="width:100%;height: 450px;">
+<h4>Royal Flush</h4>
+ <p class="p1">Get funnelled into an oscillating tube ride that will leave you and your friends reeling through a twisting, turning water flume. Hold on tight as you soar at incredible speed before spilling out into a splash pool.
+</p>
+        <p class="p2">[Restrictions] None </p>
+    
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="waterpark/attraction2.jpg" alt="park2" style="width:100%;height: 450px;">
+      <h4>Aquarium Walk</h4>
+      <p class="p1">Passengers in round boats will ascend an eight-story tower, travel along 180 feet of waterway elevated six stories and splash down a 45-foot waterfall.  
+</p>
+        <p class="p2">[Weight Restrictions] Maximum: 115kg for Single Rider and 180kg for Double Rider</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="waterpark/attraction3.jpg" alt="park3" style="width:100%;height: 450px;">
+      <h4>Adventure River</h4>
+      <p class="p1">Grab a tube and take a leisurely ride down Adventure River, floating through 14 stunning scenes including a lush jungle garden, a mysterious grotto and an underwater tunnel with a sea of marine life swimming above and around you.
+        </p>
+        <p class="p2">[Weight Restrictions] None</p>
+       
+    </div>
+  </div>
+  
+    <div class="column">
+    <div class="content">
+    <img src="waterpark/attraction4.jpg" alt="park4" style="width:100%;height: 450px;">
+      <h4>Kid Zone </h4>
+      <p class="p1">Give the young ones a taste of a wilder world at the all-new kids' water paradise, filled with exhilarating pint-sized versions of the big rides and designed to provide maximum entertainment to the little ones.</p>
+        <p class="p2">[Remarks] Children below 1.22m only. Children must be supervised by an adult at all times.  </p>
+    </div>
+  </div>
+    
+     <div class="column">
+    <div class="content">
+    <img src="waterpark/attraction5.jpg" alt="park5" style="width:100%;height: 450px;">
+      <h4>Pokémon World</h4>
+      <p class="p1">A crowd pleaser with mild to wild transitions, Tidal Twister sends you careening down an unpredictable passage of swirls and slaloms, delivering maximum fun at maximum speed.</p>
+        <p class="p2">[Weight Restrictions]Maximum: 115kg for Single Rider and 180kg for Double Rider</p>
+    </div>
+  </div>
+    <div class="column">
+    <div class="content">
+    <img src="waterpark/attraction6.jpeg" alt="park6" style="width:100%;height: 450px;">
+<h4>Splash Mountain Watercoaster</h4>
+ <p class="p1">A thrilling trip on Pokémon Mudkip's back awaits you! Part water coaster and splashing flume ride, it takes thrill-seekers 30m above the ground in rolling “boats” before swooping and spinning through a full 360-degree horizontal loop.</p>
+ <p class="p2">[Restrictions] Not for expectant mothers, Over 90cm OK</p>
+ </div>
+  </div>
+    </div>
+
+
+    
+  
+    
+    
+    
+    
+<!--Event--> 
+<section>
+ <h2 >Recommended Events and Shows</h2> 
+    
+ <div class="row" style="position: relative; right: -280px;">
+  <div class="column2">   
+<h4>Daytime Parade</h4>
+
+<div class="card">
+  <img src="waterpark/show1.jpg" alt="show 1" style="width:100%">
+  <p class="price">13:00-15:00</p>
+  <p class="p1">In this daytime parade, Pikachu and his Pokémon friends are here to take all visitors to a world of fantasy and imagination.</p>
+    <p class="p3">Outdoor Parade</p>
+  <p><button>Learn More</button></p>
+</div>
+    
+     
+
+</div>
+  <div class="column2">
+    <h4 >Pikachu Concert</h4>
+      <div class="card">
+  <img src="waterpark/show2.jpg" alt="show 2" style="width:100%">
+  <p class="price">19:00-20:00</p>
+  <p class="p1">Pikachu and many other Pokémon characters come together to put on a fun and lively show just for you! Don't Miss Out!</p>
+    <p class="p3">Stage Show</p>
+  <p><button>Learn More</button></p>
+</div>
+
+                
+     
+
+</div>
+  <div class="column2">
+<h4>Nighttime Parade</h4>
+      <div class="card">
+  <img src="waterpark/show3.png" alt="show 3" style="width:100%">
+  <p class="price">17:00-19:00</p>
+  <p class="p1">The Pikachu Night Parade where the park will be decked out in colourful decorations. Lighting up the night for you! </p>
+    <p class="p3"> Outdoor Parade</p>
+  <p><button>Learn More</button></p>
+</div>
+     </div>
+    </div>
+      
+ </section>         
+
+           
+<!--FAQ-->
+<h2>FREQUENTLY ASKED QUESTIONS</h2>
+ 
+<button type="button" class="collapsible"> Are life jackets/floation devices provided</button>
+<div class="content">
+ <p class="p1">Floatation devices such as tubes and floats are provided. Guests can request from them at the counter </p>
+</div>
+ 
+<button type="button" class="collapsible"> Are there lockers available?</button>
+<div class="content">
+ <p class="p1"> Lockers are available to safeguard your variables and are located beside the changing room. For locker prices please check her or inform our staff at the ticket counter.</p>
+</div>
+ 
+<button type="button" class="collapsible">Are there shower facilities?</button>
+<div class="content">
+ <p class="p1"> Yes indoor shower facilities are located for both adults and children.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+   
+
+    
+    
+    
+<!--footer-->
+    
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="logo.png" alt="">
+            <p>There are many Pokemon lovers all around the world. We hope to share the love of Pokemon with many Pokemon lovers out-there. Pokepark is a unique theme park that allow visitor to play with Pokemon.</p>
+            <div class="socials">
+                <img src="footer%20icon.png" alt=footer_icon>
+            </div>
+        </div>
+        <ul class="footer-right">
+            <li>
+                <h5>Contact Information</h5>
+                <ul class="box">
+                    <li>Contact Number: 012-3456789</li>
+                    <li>Fax: 012-3456789</li>
+                    <li>Email: abc@example.com</li>
+                </ul>
+            </li>
+            <li class="features">
+                <h5>Theme park Operation Hour</h5>
+                <ul class="box">
+                    <li>Weekdays: 10am-6pm</li>
+                    <li>Weekend: 9am-7pm</li>
+                    <li>Closed on every Monday except Public Holidays</li>
+                </ul>
+            </li>
+            <li>
+                <h5>Address</h5>
+                <ul class="box">
+                    <li>461 Clementi Rd</li>
+                    <li>Singapore 599491</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="footer-bottom">
+            <p>All Right reserved by XXX</p>
+        </div>
+    
+    </footer>
+        </body>
+
+</html>  

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This head section contains all the invisible information about the page -->
+<head>
+  <title>Nintendo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="stylesheet2.css"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans&family=Slabo+27px&family=Staatliches&family=Teko:wght@500&display=swap&family=Fraunces:wght@600&display=swap" rel="stylesheet">
+</head>
+    
+    
+<!-- Header -->   
+<body>
+
+    <div id="logo">
+        <img src="logo.png" alt="logo" style="width:300px;height:58px;margin: 0px">
+    </div>
+
+    <!-- The navigation menu -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">Attraction<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="waterpark.html">Water Park</a>
+                <a href="skypark.html">Sky Park</a>
+                <a href="aquarium.html">Aquarium</a>
+            </div>
+        </div>
+
+    <div class="subnav">
+        <button class="subnavbtn">Packages<i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="studentpackage.html">Student Package</a>
+            <a href="grouppackage.html">Group Package</a>
+            <a href="birthdaypackage.html">Birthday Package</a>
+            
+        </div>
+      </div>
+        
+      <div class="subnav">
+        <button class="subnavbtn">Services<i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="merchandise.html">Merchandise Shop</a>
+            <a href="tickets.html">Ticket Purchasing</a>
+            
+        </div>
+      </div>
+
+        <a href="contact.html">Contact</a>
+        <div class="topnav">
+            <input type="text" placeholder="Search.." style="position: relative; right: -300px;top: 10px; height: 40px">
+        </div>
+    </div>
+    
+        <div class="clear"></div>
+        
+<!--top image-->
+       
+       <br><br> 
+   <div class="w3-content w3-section" style="margin-top: -40px">
+  <img class="mySlides" src="skypark/slideshow.jpg" alt="slide1" style="width:100%;height:100%">
+  <img class="mySlides" src="skypark/slideshow1.jpg" alt="slide" style="width:100%;height:100%" >
+  <img class="mySlides" src="skypark/slideshow2.jpg" alt="slide3" style="width:100%;height:100%">
+  </div>
+      
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>       
+
+
+       
+<h1>About Sky Park</h1>
+<h3>Pokémon Sky Park is one of the most popular attractions in the world. With many Pokémon designed rides such as Pikachu roller coaster and Pokémon ball Ferris wheel. All Pokémon lovers and visitors will get the chance to ride our state-of-the-art adrenaline factory and enjoy the spectacular views at the top. Not only that,  our visitors can also choose from facilities such as swing boat, roller coaster and Mega King tower. These attractions will definitely give you an unforgettable memory. </h3> 
+ 
+ <hr>
+       
+        
+<!-- List of attractions here -->
+       
+<h2>Attractions</h2>
+
+       
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="skypark/attraction1.png" alt="attraction1" style="width:100%;height: 450px;">
+     <h4>Roller Coaster Adult</h4>
+     <p class="p1">One of the tallest Roller Coaster recorded in Asia full of excitement, exhilaration, fear and pure heaven. The maximum speed of the Roller Coaster is 240 km/h!
+</p>
+    <p class="p2">[Restrictions] Only for visitors above 18 years old.</p>
+    
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="skypark/attraction2.jpg" alt="attraction2" style="width:100%;height: 450px;">
+    <h4>Roller Coaster Kids</h4>
+    <p class="p1">Time for our little riders to hop on the adorable Pikachu roller coaster for a fun-filled ride. Do not miss out our lucky draw and get a chance to win prizes.
+    </p>
+    <p class="p2">[Weight Restrictions] Maximum: 30kg for Single Rider and 60kg for Double Rider</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="skypark/attraction3.jfif" alt="attraction3" style="width:100%;height: 450px;">
+      <h4>Mega King Tower</h4>
+      <p class="p1">Grab the only chance to reach the skies in our country when you riding this Mega King Tower. A park favourite among all with the highest ride history. 
+        </p>
+        <p class="p2">[Restrictions] Only for visitors above 18 years old.</p>
+       
+    </div>
+  </div>
+  
+    <div class="column">
+    <div class="content">
+    <img src="skypark/attraction4.jpg" alt="attraction4" style="width:100%;height: 450px;">
+    <h4>Swing Boat</h4>
+    <p class="p1">While most boats sail this one flies. They might be bumpy surprises along the way so come and get in our boat. This is a ride not to be missed by one bring along your children, friends and families and check this out.</p>
+        <p class="p2">[Restrictions] None</p>
+
+ </div>
+
+  </div>
+    
+     <div class="column">
+    <div class="content">
+    <img src="skypark/attraction5.png" alt="attraction5" style="width:100%;height: 450px;">
+      <h4>Ferris Wheel</h4>
+      <p class="p1">We designed this based on the Pokémon ball idea which enables  the passenger to experience that they are staying inside the Pokémon ball and turning themself into a Pokémon.</p>
+        <p class="p2">[Remarks] Children must be supervised by an adult at all times.</p>
+    </div>
+  </div>
+    <div class="column">
+    <div class="content">
+    <img src="skypark/attraction6.jpg" alt="attraction6" style="width:100%;height: 450px;">
+      <h4>Flying Sky Tower</h4>
+      <p class="p1">Combination of Mega King Tower and Roller Coaster. Visitors can watch the beautiful scenery especially the sunsets on this facility and enjoy the moment of flying in the sky. </p>
+        <p class="p2">[Restrictions] Only for visitors above 18 years old.</p>
+    </div>
+  </div>
+    </div>
+    
+    
+    
+    
+<!--Event--> 
+
+<section>
+ <h2 >Recommended Events and Shows</h2> 
+    
+ <div class="row" style="position: relative; right: -280px;">
+  <div class="column2">   
+<h4>Daytime Parade</h4>
+
+<div class="card">
+  <img src="waterpark/show1.jpg" alt="show 1" style="width:100%">
+  <p class="price">13:00-15:00</p>
+  <p class="p1">In this daytime parade, Pikachu and his Pokémon friends are here to take all visitors to a world of fantasy and imagination.</p>
+    <p class="p3">Outdoor Parade</p>
+  <p><button>Learn More</button></p>
+</div>
+    
+     
+
+</div>
+  <div class="column2">
+    <h4 >Pikachu Concert</h4>
+      <div class="card">
+  <img src="waterpark/show2.jpg" alt="show 2" style="width:100%">
+  <p class="price">19:00-20:00</p>
+  <p class="p1">Pikachu and many other Pokémon characters come together to put on a fun and lively show just for you! Don't Miss Out!</p>
+    <p class="p3">Stage Show</p>
+  <p><button>Learn More</button></p>
+</div>
+
+                
+     
+
+</div>
+  <div class="column2">
+<h4>Nighttime Parade</h4>
+      <div class="card">
+  <img src="waterpark/show3.png" alt="show 3" style="width:100%">
+  <p class="price">17:00-19:00</p>
+  <p class="p1">The Pikachu Night Parade where the park will be decked out in colourful decorations. Lighting up the night for you! </p>
+    <p class="p3"> Outdoor Parade</p>
+  <p><button>Learn More</button></p>
+</div>
+     </div>
+    </div>
+      
+ </section>  
+<!--FAQ-->
+   <h2>FREQUENTLY ASKED QUESTIONS</h2>
+       
+<button type="button" class="collapsible">Is photo taking allowed?</button>
+<div class="content">
+  <p class="p1">Yes, photo taking is permitted on the premises but not during the rides for the safety of guests.</p>
+</div>
+       
+<button type="button" class="collapsible">Are there facilities for guests with disabilities?</button>
+<div class="content">
+  <p class="p1"> Yes some of the facilities are disability-friendly.</p>
+</div>
+       
+<button type="button" class="collapsible"> Will the rides be open during adverse weather conditions?</button>
+<div class="content">
+  <p class="p1"> During certain weather conditions such as heavy rain, lightning or high winds the rides may be closed to ensure safety. We will make an effort to reopen the rides as soon as possible when conditions are better.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+   
+  
+       
+<br>
+    
+ <!--footer-->
+    
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="logo.png" alt="">
+            <p>There are many Pokemon lovers all around the world. We hope to share the love of Pokemon with many Pokemon lovers out-there. Pokepark is a unique theme park that allow visitor to play with Pokemon.</p>
+            <div class="socials">
+                <img src="footer%20icon.png" alt=footer_icon>
+            </div>
+        </div>
+        <ul class="footer-right">
+            <li>
+                <h5>Contact Information</h5>
+                <ul class="box">
+                    <li>Contact Number: 012-3456789</li>
+                    <li>Fax: 012-3456789</li>
+                    <li>Email: abc@example.com</li>
+                </ul>
+            </li>
+            <li class="features">
+                <h5>Theme park Operation Hour</h5>
+                <ul class="box">
+                    <li>Weekdays: 10am-6pm</li>
+                    <li>Weekend: 9am-7pm</li>
+                    <li>Closed on every Monday except Public Holidays</li>
+                </ul>
+            </li>
+            <li>
+                <h5>Address</h5>
+                <ul class="box">
+                    <li>461 Clementi Rd</li>
+                    <li>Singapore 599491</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="footer-bottom">
+            <p>All Right reserved by XXX</p>
+        </div>
+    
+    </footer>
+    
+    </body>
+</html>  

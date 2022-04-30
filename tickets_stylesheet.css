@@ -1,0 +1,267 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+}
+
+#logo {
+    background-color: lightblue;
+    display: inline-block;
+    float: left;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(106,90,205);
+  margin-top: -10px;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 30px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: lightblue;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: darkblue;
+  text-decoration: none;
+}
+
+/* Grey background color on hover */
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+/* Search Bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+#bookingsection{
+    height: 100px;
+}
+
+.bookingdiv{
+    height: 180px;
+    width: 30%;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 25px;
+    background-color: #ffb3b3;
+    border: 5px solid skyblue;
+    float: left;
+    display: flex;
+    background-size: cover;
+}
+
+h2{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 30px;
+    color: cornflowerblue;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+/* ticket buttons interaction*/
+#booking1{
+    background: url("./ticket/ticket1.jpg");
+    background-size: 50%;
+}
+
+#booking2{
+    background: url("./ticket/ticket2.jpg");
+    background-size: 50%;
+}
+
+#booking3{
+    background: url("./ticket/ticket3.jpg");
+    background-size: 52%;
+}
+
+#booking4{
+    background: url("./ticket/ticket4.jpg");
+    background-size: 50%;
+}
+
+#booking5{
+    background: url("./ticket/ticket5.jpg");
+    background-size: 50%;
+}
+
+#booking6{
+    background: url("./ticket/ticket6.png");
+    background-size: 50%;
+}
+
+#booking1:hover, #booking2:hover, #booking3:hover, #booking4:hover, #booking5:hover, #booking6:hover{
+    animation-name: scale;
+    animation-duration: 1s;
+}
+
+@keyframes scale {
+    0% {
+        background-size: 50%;
+    }
+    50% {
+        background-size: 80%;
+    }
+}
+
+
+.booktext {
+    font-family: 'Andika New Basic', Tahoma, sans-serif;
+    font-size: 18px;
+    height: 45%;
+    width: 100%;
+    background: linear-gradient(lightblue, paleturquoise);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+h3{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    background-color: skyblue;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+
+h4 {
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 21px;
+	text-decoration: inherit;
+    color: darkblue;
+    text-align: center
+	
+}
+
+ul, ol{   /*list styling*/
+    font-family: 'Nunito', Tahoma, sans-serif;
+    font-size: 16px;
+    color: steelblue;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
+button {
+    background-color: dodgerblue;
+    border: 30px powderblue;
+    color: white;
+    padding: 24px 45px;
+    text-align: center;
+    font-size: 24px;
+    margin: 50px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-left: 640px;
+}
+
+.coupon {
+  border: 5px dotted #bbb; /* Dotted border */
+  width: 50%;
+  border-radius: 10px; /* Rounded border */
+  margin: 0 auto; /* Center the coupon */
+  max-width: 600px;
+}
+
+.container {
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+}
+
+.promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.expire {
+  color: red;
+}
+
+
+
+p {   /*list styling*/
+    font-family: 'Nunito', Tahoma, sans-serif;
+    font-size: 16px;
+    color: steelblue;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#notice {
+    padding: 0px 0px 50px 0px;
+}
+
+#notice-inner {
+	background: lightblue;
+	height: 150px;
+	padding:10px;
+}
+img{
+    align-content: right;
+}

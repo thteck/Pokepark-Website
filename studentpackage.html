@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This head section contains all the invisible information about the page -->
+<head>
+  <title>Nintendo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="stylesheetstudent.css"> 
+</head>
+    
+ <!-- This body section contains the structure for all the visble content -->
+
+<body>
+    
+    <div id="logo">
+        <img src="img/logo.png" alt=logo style="width:300px;height:58px;">
+    </div>
+
+    <!-- The navigation menu -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">Attraction<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="waterpark.html">Water Park</a>
+                <a href="skypark.html">Sky Park</a>
+                <a href="aquarium.html">Aquarium</a>
+            </div>
+        </div>
+
+    <div class="subnav">
+        <button class="subnavbtn">Packages<i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="studentpackage.html">Student Package</a>
+            <a href="grouppackage.html">Group Package</a>
+            <a href="birthdaypackage.html">Birthday Package</a>
+            
+        </div>
+      </div>
+        
+      <div class="subnav">
+        <button class="subnavbtn">Services<i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="merchandise.html">Merchandise Shop</a>
+            <a href="tickets.html">Ticket Purchasing</a>
+            
+        </div>
+      </div>
+
+        <a href="contact.html">Contact</a>
+        <div class="topnav">
+            <input type="text" placeholder="Search.." style="position: relative; right: -300px;top: 10px; height: 40px">
+        </div>
+    </div>
+<div class="clear"></div>
+
+
+    <br><br>
+    
+<!-- Name of the page -->    
+<nav><h2>School Trip Package</h2></nav>
+    
+    
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="img/student%201.jpg" alt=student1 style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="img/student2.jpg" alt=student2 style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="img/student3.jpg" alt=student3 style="width:100%">
+  </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="img/student5.jpg" alt=student5 style="width:100%">
+  </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="img/student.webp" alt=student style="width:100%">
+  </div>
+    
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>  
+</div>   
+    
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>     
+    
+ <!-- package included-->
+    
+<h3>Package Included</h3>
+<div class="col-xs-1 center-block">
+<p>✔️ Full day entry (1-Day Ticket) to PokePark</p>
+<p>✔️ RM15 Pokemon Combo Meal Voucher</p>
+    <p>✔️ Free t-shirt to every student involved</p>
+<p>✔️ 1 (One) Education Workshop per group (OPTIONAL)</p>
+<p>✔️ 1 (One) complimentary admission for Teacher every 10 paying students per group</p>
+</div>  
+    
+ <!--Pricing Table-->
+      <section>
+       <h3> Pricing Table</h3>
+       <p style="text-align: center"> 
+Exclusive rate only for Schools with savings up to 40%! </p>
+
+     <table id="pricelist" style="width: 100%">
+      <tr>
+        <th>Themepark</th>
+        <th>For each Student</th>  
+      </tr>
+         
+      <tr>
+        <td>WaterPark</td>
+        <td>10 €</td>
+      </tr>
+         
+      <tr>
+        <td>Rollar Coaster</td>
+        <td>10 €</td> 
+      </tr>
+         
+      <tr>
+        <td>Poke Aquarium</td>
+        <td>10 €</td>
+      </tr>
+         
+      <tr>
+        <td>All Park</td>
+        <td>20 €</td>
+      </tr>
+            
+    </table>
+          
+ <a class="button" href="tickets.html">BOOK NOW</a>
+          
+
+       <br><br>
+       <br><br>
+     
+   </section>  
+    
+  <h3>Terms & Conditions</h3>
+<p>☑️Advance booking is required.Packages are not available over the counter.
+    
+<p> ☑️Minimum participants: 20 paying students.</p>
+<p>
+    ☑️One complimentary admission for Adult/Teacher for every 10 paying students per group.</p>
+<p>
+    ☑️Additional fees will be charged for any additional Adult/parents/tour leader/tour guide as per price table.</p>
+<p>
+    ☑️Full payment must be made 7 working days in advance before the date of visit.</p>
+
+<p>☑️Proper swim wear is required for all attractions in the Water Park. Swim wear with exposed zippers, buckles, rivets or metal ornamentation are not permitted.</p>
+
+<p>☑️It is advisable to rent lockers to store your personal belongings. The lockers are available for rent on a daily basis.</p>
+    
+    
+<h3>Workshop For Education</h3>   
+
+
+<p>Click on the boxes below to check out the information about workshop</p>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:lightblue;">
+   <img src="img/wo1.jpg" alt="wo1" style="width:100%">   
+    Poke Hunt Race
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:skyblue;">
+   <img src="img/wo2.jpg" alt="wo2" style="width:100%">  
+    Poke Hand Craft
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:steelblue;">
+   <img src="img/wo3.jpg" alt="wo3" style="width:100%">   
+    Poke Sea Life
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:lightblue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Poke Hunt Race</h2>
+  <h4>Build trust and teamwork to conquer checkpoints and triumph over challenges as a group!Take part in group activities designed to strengthen your bonds and communication skills!</h4>
+
+        <h4>📌Half day’s worth of group activities</h4>
+        <h4>📌Team Building trainer</h4>
+        <h4>📌Checkpoint Ride challenge</h4>
+        <h4>📌Warm-up and other energising activities</h4>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:skyblue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Pokemon Hand Craft</h2>
+   <h4>There are 10 hand craft workshops to choose from! Focused learning in Hands-on, collaborative projects. Try Get creative with Pokémon crafts to make! 
+</h4>
+    
+        <h4>📌Teacher Resource Guides: Standards-based, before and after visit worksheets </h4>
+        <h4>📌45-minute per session</h4>
+        <h4>📌Self-guided option is also available</h4>
+        <h4>📌Earn cool certificates at the end of Workshop</h4>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:steelblue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Pokemon Sea Life</h2>
+ <h4>Discover more of the underwater world. Explore and learn about the wonderful world of the sea and its creatures through magical storytelling, interactive displays and hand-on discoveries.
+        </h4>
+        <h4>📌All SEA LIFE education programme is available on weekdays only.</h4>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+    
+    
+
+
+<br><br> 
+    
+ 
+<footer class="footer">
+        <div class="footer-left">
+            <img src="logo.png" alt=logo>
+            <h5>There are many Pokemon lovers all around the world. We hope to share the love of Pokemon with many Pokemon lovers out-there. Pokepark is a unique theme park that allow visitor to play with Pokemon.</h5>
+            <div class="socials">
+                <img src="footer%20icon.png" alt=footericon>
+            </div>
+        </div>
+        <ul class="footer-right">
+            <li>
+                <h5>Contact Information</h5>
+                <ul class="box">
+                    <li>Contact Number: 012-3456789</li>
+                    <li>Fax: 012-3456789</li>
+                    <li>Email: abc@example.com</li>
+                    
+                </ul>
+            </li>
+            <li class="features">
+                <h5>Theme park Operation Hour</h5>
+                <ul class="box">
+                    <li>Weekdays: 10am-6pm</li>
+                    <li>Weekend: 9am-7pm</li>
+                    <li>Closed on every Monday except Public Holidays</li>
+                </ul>
+            </li>
+            <li>
+                <h5>Address</h5>
+                <ul class="box">
+                    <li>461 Clementi Rd</li>
+                    <li>Singapore 599491</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="footer-bottom">
+            <h4>All Right reserved by XXX</h4>
+        </div>
+    
+    </footer>
+</body>
+</html>    
+    
+        
+    

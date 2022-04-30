@@ -1,0 +1,319 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+}
+
+#logo {
+    background-color: lightblue;
+    display: inline-block;
+    float: left;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(106,90,205);
+  margin-top: -10px;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 30px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: lightblue;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: darkblue;
+  text-decoration: none;
+}
+
+/* Grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* Search Bar */
+.topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      position: relative;top: 10px;
+      padding: 14px 16px;
+
+}
+
+.clear {
+    clear: both;
+}
+
+img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+mySlides{
+    height: 100%
+}
+
+/* Four Column side by side*/
+
+.column {
+  float: left;
+  width: 24%;
+  border-style:double;
+  border-color: gainsboro;
+  position: relative;left:20px;
+  background-color: aliceblue;
+
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1{ font-family:'Kreon', serif;
+    text-align: center;
+    color:	cadetblue;
+    font-size: 31px;}
+
+
+
+p.a{
+    font-family: 'Acme', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 19px;
+    color: black;
+    text-align: left;
+    word-spacing: normal;
+}
+
+p.b{
+    font-family: 'Acme', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 19px;
+    color: black;
+    text-align: left;
+    word-spacing: normal;
+}
+
+p.c{
+    font-family: 'Acme', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 19px;
+    color: black;
+    text-align: left;
+    word-spacing: normal;
+}
+
+p.d{
+    font-family: 'Acme', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 19px;
+    color: black;
+    text-align: left;
+    word-spacing: normal;
+}
+
+h3{font-family: 'Slabo 27px', serif;
+    color:black;
+    font-size: 45px;
+     text-align: center;
+}
+
+li.a{font-family: 'Goldman', cursive;
+     color: #191970;
+    font-size: 19px;}
+
+.button {
+  background-color:	#40bbbf;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Goldman', cursive;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+  left: 60px;
+  top: -15px;
+}
+
+table{
+    position: relative;left: 30px;
+}
+
+
+
+.button2 {
+  background-color:cornflowerblue;
+  font-family: 'Goldman', cursive;
+  color: #FFF0F5; 
+  border: 2px solid;
+  border-color: black;
+  position: relative;;left: 40px;
+  padding: 15px 32px;
+}
+
+.button2:hover {
+  background-color: #40bbbf;
+  color: white;
+}
+
+.container {
+  padding: 10px;
+  background-color: aliceblue;
+}
+
+footer{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    color: #fff;
+    background-color: #011c39;
+}
+
+.footer > *{
+    flex: 1 100%;
+}
+.footer-left{
+    margin-right: 1.25em;
+}
+.footer-left img{
+    width: 50%;
+    height: 110px;
+}
+h2{
+    font-weight: 600;
+    font-size: 17px;
+    text-align: left;
+}
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer li{
+    line-height: 2em;
+    word-spacing: normal;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer-right{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap; 
+}
+.footer-right >*{
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+.box a{
+    color: #999
+}
+.footer-bottom{
+    text-align: center;
+    color: #999;
+    padding-top: 0px;
+}
+.footer left li{
+    padding-right: 20%;
+    color: #999;
+}
+.socials a{
+    background: white;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.socials a i{
+    color: black;
+    padding: 10px 12px;
+    font-size: 20px;
+}
+@media screen and (min-width:600px){
+    .footer-right> *{
+        flex: 1;
+    }
+    .footer-left{
+        flex: 1 0px;
+    }
+    .footer-right{
+        flex: 2 0px;
+    }
+}
+
+p{
+    border: 10px powderblue;
+    border-radius: 15px;
+}
